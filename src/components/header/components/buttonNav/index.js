@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconLogo } from '../../../../common/icons';
 
 export default function ButtonNav() {
   return (

@@ -13,6 +13,7 @@ export default function TabNav() {
       {tabs.map((item, index) => {
         return (
           <p
+            key={index}
             onClick={() => {
               setSelectedTab(index);
             }}

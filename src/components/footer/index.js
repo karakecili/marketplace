@@ -34,7 +34,7 @@ function Footer() {
             <ul className="grid gap-y-3">
               {col1.map((item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <a
                       className="hover:font-bold"
                       href={item.url}
@@ -52,7 +52,7 @@ function Footer() {
             <ul className="grid gap-y-3">
               {col2.map((item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <a
                       className="hover:font-bold"
                       href={item.url}
