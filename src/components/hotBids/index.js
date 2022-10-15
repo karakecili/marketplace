@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { Heart } from '../../common/icons';
 
 export default function HotBids() {
@@ -11,9 +12,10 @@ export default function HotBids() {
         {items &&
           items.map((item, index) => {
             return (
-              <div
+              <Link
                 key={index}
                 className="flex flex-col border-solid border-2 border-gray-400 rounded-xl w-60 h-72 hover:bg-purple-200"
+                to={`/bids/${item.id}`}
               >
                 <img
                   src={item.image}
@@ -32,7 +34,7 @@ export default function HotBids() {
                     <b>{item.fav}</b>
                   </span>
                 </div>
-              </div>
+              </Link>
             );
           })}
       </div>

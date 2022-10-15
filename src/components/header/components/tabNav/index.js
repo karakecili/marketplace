@@ -9,7 +9,7 @@ export default function TabNav() {
   ];
 
   return (
-    <div className="flex gap-2">
+    <div className="hidden md:flex gap-2 ">
       {tabs.map((item, index) => {
         return (
           <p
